@@ -1,0 +1,43 @@
+body {
+    background-image: url(../Billeder/pizza-20.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+    margin-left: 15px;
+    background-color : rgb(51, 51, 51, 0.7);
+    opacity: 1;
+    margin-left: 900px;
+  }
+
+  td, th {
+    text-align: left;
+    border: 2px solid black;
+    color: white;
+    padding: 8px;
+    font-size: larger;
+  }
+
+  #tilbage_til_forsiden {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    width: 9%;
+    padding: 8px;
+    margin: 30px 0px 0px 30px;
+    border-radius: 1rem;
+    opacity: 0.95;
+  }
+
+#tilbage_til_forsiden:hover {
+    color: lightblue;
+}
+
+  
