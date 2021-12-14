@@ -126,7 +126,7 @@ table {
     top: 27%;
 }
 
-.searchBox:hover > .searchInput {
+.searchBox:hover > #searchBar {
     width: 240px;
     padding: 0 6px;
 }
@@ -149,7 +149,7 @@ table {
     transition: 0.4s;
 }
 
-.searchInput {
+#searchBar {
     border:none;
     background: none;
     outline:none;
@@ -172,8 +172,9 @@ table {
 
 .pizza-box {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 300px;
     height: 500px;
     background-color: rgb(51, 51, 51);
@@ -188,6 +189,11 @@ table {
 .pizza-box h3 {
     position: relative;
     bottom: 12px;
+}
+
+#pizza-search {
+    width: 250px;
+    height: auto;
 }
 
 
