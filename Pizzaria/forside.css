@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
-    background-image: url(Billeder/pizza.jpg);
+    background-image: url(Billeder/pizza-21.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -79,6 +79,21 @@ div {
 
 }
 
+.aabningstider {
+    flex-direction: column;
+}
+
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    
+  }
+
+  td, th {
+    color: white;
+    font-weight: bolder;
+  }
+
 #search-description {
     
     color: white;
@@ -104,7 +119,7 @@ div {
     padding: 10px;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 27%;
 }
 
 .searchBox:hover > .searchInput {
@@ -172,19 +187,3 @@ div {
 }
 
 
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 20%;
-    
-  }
-
-  td, th {
-    text-align: left;
-    color: white;
-    font-weight: bolder;
-    
-
-   
-  }
