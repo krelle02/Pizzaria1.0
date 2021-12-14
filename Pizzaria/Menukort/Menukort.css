@@ -7,12 +7,21 @@ body {
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 20%;
+    width: 30%;
     margin-left: 15px;
+    background-color : rgb(51, 51, 51, 0.7);
+    opacity: 1;
+    margin-left: 900px;
   }
 
   td, th {
     text-align: left;
+    border: 2px solid black;
     color: white;
     padding: 8px;
+    font-size: larger;
+  }
+
+  #tilbage_til_forsiden {
+    background-color: rgb(51, 51, 51);
   }
