@@ -194,10 +194,13 @@ table {
 
 #insertSearch {
     display: inline-block;
-    width: 60%;
-    
-    
+    width: 65%;
 }
+
 #insertSearch p {
     text-align: center;
+}
+
+#insertSearch ul {
+    list-style-type:square;
 }
