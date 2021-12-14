@@ -152,11 +152,12 @@ div {
     background-color: rgb(51, 51, 51);
     opacity: 0.9;
     border: 1px solid;
+    border-radius: 0.5rem;
     font-weight: bolder;
     font-size: 120%;
     position: absolute;
     top: 20%;
-    left: 65%;
+    left: 67%;
     
 }
 
