@@ -79,20 +79,29 @@ div {
 
 }
 
-.aabningstider {
-    flex-direction: column;
+.tider {
+
+   flex-direction: column;
+   width: 300px;
+   margin-top: -5px; 
+  
+}
+
+.forside-midt {
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 table {
     font-family: arial, sans-serif;
-    width: 100%;
+    color: white;
+    font-weight: bolder;
+    border-spacing: 0 15px;
+    
     
   }
 
-  td, th {
-    color: white;
-    font-weight: bolder;
-  }
+  
 
 #search-description {
     
@@ -104,11 +113,6 @@ table {
     background-color: rgb(51, 51, 51) ;
     opacity: 0.9;
 
-}
-
-.forside-midt {
-    margin-left: 10rem;
-    margin-right: 10rem;
 }
 
 .searchBox {
