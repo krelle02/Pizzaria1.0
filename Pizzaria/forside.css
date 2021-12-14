@@ -191,9 +191,17 @@ table {
     bottom: 12px;
 }
 
-#pizza-search {
+#img-search {
     width: 250px;
     height: auto;
 }
 
-
+#insertSearch {
+    display: inline-block;
+    width: 60%;
+    
+    
+}
+#insertSearch p {
+    text-align: center;
+}
