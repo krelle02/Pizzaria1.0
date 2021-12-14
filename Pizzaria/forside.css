@@ -83,21 +83,21 @@ div {
 
    flex-direction: column;
    width: 300px;
-   margin-top: -5px; 
+   margin-top: 0px; 
   
 }
+
+table {
+    color: white;
+    font-weight: bolder;
+    border-spacing: 0 20px; 
+  }
 
 .forside-midt {
     margin-left: 10rem;
     margin-right: 10rem;
 }
 
-table {
-    font-family: arial, sans-serif;
-    color: white;
-    font-weight: bolder;
-    border-spacing: 0 20px; 
-  }
 
 #search-description {
     
@@ -119,7 +119,7 @@ table {
     padding: 10px;
     position: absolute;
     left: 50%;
-    top: 27%;
+    top: 30%;
 }
 
 .searchBox:hover > #searchBar {
@@ -180,11 +180,6 @@ table {
     font-weight: bolder;
     font-size: 120%;
     
-}
-
-.pizza-box h3 {
-    position: relative;
-    bottom: 12px;
 }
 
 #img-search {
