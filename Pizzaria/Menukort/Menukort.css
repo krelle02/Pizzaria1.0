@@ -28,7 +28,6 @@ table {
     text-decoration: none;
     font-size: large;
     display: flex;
-    background-color: rgb(51, 51, 51);
     width: 9%;
     padding: 8px;
     margin: 30px 0px 0px 30px;
@@ -38,6 +37,11 @@ table {
 
 #tilbage_til_forsiden:hover {
     color: lightblue;
+}
+
+h2 {
+  margin-left: 900px;
+  color: white;
 }
 
   

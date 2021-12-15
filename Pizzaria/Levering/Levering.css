@@ -17,3 +17,19 @@
 #tilbage_til_forsiden:hover {
     color: lightblue;
 }
+
+body {
+  background-image: url(../Billeder/Pizzabud.png);
+  background-color:rgb(51, 51, 51);
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: top;
+}
+
+h2 {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
