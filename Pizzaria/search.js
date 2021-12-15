@@ -14,9 +14,7 @@ function getIntredients(filteredChars,Target) {
     for (let i = 0; i < filteredChars.length; i++) {
         for (let j = 0; j <filteredChars[i].ingredients.length; j++) {
             const li = document.createElement('li');
-            console.log(filteredChars[i].ingredients[j])
             li.innerText = filteredChars[i].ingredients[j]
-            console.log(li);
             const ulTarget = document.querySelector('#ingredients');
             ulTarget.appendChild(li);
         }
@@ -36,9 +34,7 @@ searchBar.addEventListener('keyup', (e) => {
        const p = document.createElement('p');
        p.innerText = "Ingredients";
        const Target = document.querySelector('#insertSearch');
-       console.log(Target);
        Target.appendChild(p);
-       console.log(p);
        getIntredients(filteredChars,Target);
    }
 })
