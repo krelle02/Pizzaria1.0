@@ -1,5 +1,5 @@
 
-const pizzas = [{name:"pepperoni", ingredients: ["Meat", "Pep"], image: "Billeder/Pizza_1.png"}, {name:"kebab",ingredients: ["Meat"], image: "Billeder/Kebab.png" }, {name:"hawaii", ingredients: ["Meat", "Ananas"], image: "Billeder/Hawaii.png"}];
+const pizzas = [{name:"pepperoni", ingredients: ["Pepperoni", "Ost", "Tomatsovs"], image: "Billeder/Pepperoni.png"}, {name:"kebab",ingredients: ["Kebab", "Rødløg", "Ost", "Tomatsovs"], image: "Billeder/Kebab.png" }, {name:"hawaii", ingredients: ["Skinke", "Ananas", "Ost"], image: "Billeder/Hawaii.png"}, {name:"magarita", ingredients: ["Ost", "Tomatsovs"], image: "Billeder/Magarita.png"}];
 const searchBar = document.getElementById("searchBar");
 var currPizza
 console.log(searchBar);
