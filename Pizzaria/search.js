@@ -11,15 +11,15 @@ function getIntredients(filteredChars,Target) {
     ul.id = "ingredients";
     Target.appendChild(ul);
     // insert ingredients
-    for (let i = 0; i < filteredChars.length; i++) {
-        for (let j = 0; j <filteredChars[i].ingredients.length; j++) {
+   
+        for (let j = 0; j <filteredChars[0].ingredients.length; j++) {
             const li = document.createElement('li');
-            li.innerText = filteredChars[i].ingredients[j]
+            li.innerText = filteredChars[0].ingredients[j]
             const ulTarget = document.querySelector('#ingredients');
             ulTarget.appendChild(li);
         }
     }
-}
+
 
 searchBar.addEventListener('keyup', (e) => {
    const searchString = e.target.value.toLowerCase(); 
@@ -37,6 +37,8 @@ searchBar.addEventListener('keyup', (e) => {
        Target.appendChild(p);
        getIntredients(filteredChars,Target);
        //clear searchbar
+       const searchbar = document.getElementById('searchBar')
+       searchbar.value = '';
    }
 })
 
