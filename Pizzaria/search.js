@@ -41,5 +41,3 @@ searchBar.addEventListener('keyup', (e) => {
        searchbar.value = '';
    }
 })
-
-

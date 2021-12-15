@@ -12,6 +12,7 @@ table {
     background-color : rgb(51, 51, 51, 0.7);
     opacity: 1;
     margin-left: 900px;
+    border-radius: 1rem;
   }
 
   td, th {
@@ -20,6 +21,23 @@ table {
     color: white;
     padding: 8px;
     font-size: larger;
+    border-left: transparent;
+    border-top: transparent;
+  }
+
+  tr:hover {background-color: rgb(35,35,35,0.7);}
+
+  #test1 {
+    border-bottom: transparent;
+  }
+
+  #test2 {
+    border-bottom: transparent;
+    border-right: transparent;
+  }
+
+  #test3 {
+    border-right: transparent;
   }
 
   #tilbage_til_forsiden {
