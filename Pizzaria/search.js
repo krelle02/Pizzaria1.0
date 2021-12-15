@@ -36,6 +36,7 @@ searchBar.addEventListener('keyup', (e) => {
        const Target = document.querySelector('#insertSearch');
        Target.appendChild(p);
        getIntredients(filteredChars,Target);
+       //clear searchbar
    }
 })
 
