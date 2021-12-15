@@ -4,6 +4,8 @@
     text-decoration: none;
     font-size: large;
     display: flex;
+    
+    justify-content: center;
     background-color: rgb(51, 51, 51);
     width: 9%;
     padding: 8px;
