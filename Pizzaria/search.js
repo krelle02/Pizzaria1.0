@@ -1,9 +1,11 @@
 
 const pizzas = [{name:"pepperoni", ingredients: ["Pepperoni", "Ost", "Tomatsovs"], image: "Billeder/Pepperoni.png"}, 
 {name:"kebab",ingredients: ["Kebab", "Rødløg", "Ost", "Tomatsovs"], image: "Billeder/Kebab.png" }, 
-{name:"hawaii", ingredients: ["Skinke", "Ananas", "Ost"], image: "Billeder/Hawaii.png"}, 
+{name:"hawaii", ingredients: ["Skinke", "Ananas", "Ost", "Tomatsovs"], image: "Billeder/Hawaii.png"}, 
 {name:"margherita", ingredients: ["Ost", "Tomatsovs"], image: "Billeder/Magarita.png"},
-{name:"Spaghetti bolognese", ingredients: ["bla"], image: "t"}];
+{name:"spaghetti bolognese", ingredients: ["Spaghetti", "Kødsovs"], image: "t"},
+{name:"spaghetti carbonara", ingredients: ["Spaghetti", "Champignon", "Æg", "Skinke", "Bacon", "Parmesan"], image: "t"},
+{name:"lasagne", ingredients: ["Hjemmelavet"], image: "t"}];
 
 const searchBar = document.getElementById("searchBar");
 var currPizza
