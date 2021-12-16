@@ -1,5 +1,10 @@
 
-const pizzas = [{name:"pepperoni", ingredients: ["Pepperoni", "Ost", "Tomatsovs"], image: "Billeder/Pepperoni.png"}, {name:"kebab",ingredients: ["Kebab", "Rødløg", "Ost", "Tomatsovs"], image: "Billeder/Kebab.png" }, {name:"hawaii", ingredients: ["Skinke", "Ananas", "Ost"], image: "Billeder/Hawaii.png"}, {name:"margherita", ingredients: ["Ost", "Tomatsovs"], image: "Billeder/Magarita.png"}];
+const pizzas = [{name:"pepperoni", ingredients: ["Pepperoni", "Ost", "Tomatsovs"], image: "Billeder/Pepperoni.png"}, 
+{name:"kebab",ingredients: ["Kebab", "Rødløg", "Ost", "Tomatsovs"], image: "Billeder/Kebab.png" }, 
+{name:"hawaii", ingredients: ["Skinke", "Ananas", "Ost"], image: "Billeder/Hawaii.png"}, 
+{name:"margherita", ingredients: ["Ost", "Tomatsovs"], image: "Billeder/Magarita.png"},
+{name:"Spaghetti bolognese", ingredients: ["bla"], image: "t"}];
+
 const searchBar = document.getElementById("searchBar");
 var currPizza
 console.log(searchBar);
