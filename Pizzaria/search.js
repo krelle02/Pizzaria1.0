@@ -8,9 +8,6 @@ const pizzas = [{name:"pepperoni", ingredients: ["Pepperoni", "Ost", "Tomatsovs"
 {name:"lasagne", ingredients: ["Hjemmelavet"], image: "t"}];
 
 const searchBar = document.getElementById("searchBar");
-var currPizza
-console.log(searchBar);
-
 
 function getIntredients(filteredChars,Target) {
     //insert ul element
@@ -37,6 +34,9 @@ searchBar.addEventListener('keyup', (e) => {
        const Node = document.getElementById('insertSearch')
        Node.textContent = '';
        document.getElementById("img-search").src = filteredChars[0].image;
+       //sets "din pizza"
+       const name = filteredChars[0].name[0].toUpperCase() + filteredChars[0].name.slice(1);
+       document.getElementById('din-pizza').textContent = name;
        //insert ingredients p element before ingredients-list
        const p = document.createElement('p');
        p.innerText = "Ingredients";

@@ -1,4 +1,6 @@
-
+:root {
+--main-color: rgba(25,22,19,255);
+}
 
 body {
     margin: 0 ;
@@ -8,7 +10,7 @@ body {
     background-image: url(Billeder/pizza-21.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: antiquewhite;
+    background-color: var(--main-color) ;
 }
 
 .nav-bar {
@@ -21,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(51, 51, 51);
+    background-color: var(--main-color);
     width: 80%;
     padding: 5px;
     margin: 30px 50px 0px 50px;
@@ -74,7 +76,6 @@ div {
     height: 600px;;
     display: flex;
     flex: 1 1 100%;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 40px;
@@ -83,18 +84,27 @@ div {
 
 
 .tider {
-
    flex-direction: column;
    width: 20rem;
-   margin-top: 0px; 
-  
+   height: 50vh;
 }
 
-table {
+.table {
+    display: grid;
+    grid-template-columns: repeat(2,8rem);
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    column-gap: 0.5rem;
     color: white;
     font-weight: bolder;
     border-spacing: 0 20px; 
   }
+.times {
+    justify-self: left;
+}
+
+
 
 #search-description {
     
@@ -103,20 +113,20 @@ table {
     font-size: 200%;
     padding: 3px 30px 3px 30px;
     border-radius: 1rem;
-    background-color: rgb(51, 51, 51) ;
-    opacity: 0.9;
+    background-color: var(--main-color) ;
+    opacity: 0.95;
 
 }
 
 .searchBox {
     transform:  translate(-50%,50%);
-    background:rgb(51, 51, 51) ;
+    background: var(--main-color) ;
     height: 40px;
     border-radius: 40px;
     padding: 10px;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 25%;
 }
 
 .searchBox:hover > #searchBar {
@@ -126,7 +136,7 @@ table {
 
 .searchBox:hover > .searchButton {
   background: white;
-  color : rgb(51, 51, 51);
+  color : var(--main-color);
 }
 
 .searchButton {
@@ -135,7 +145,7 @@ table {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgb(51, 51, 51);
+    background: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,8 +179,8 @@ table {
     justify-content: flex-start;
     align-items: center;
     width: 20rem;
-    height: 50vh;
-    background-color: rgb(51, 51, 51);
+    min-height: 30vh;
+    background-color: var(--main-color);
     opacity: 0.9;
     border: 1px solid;
     border-radius: 0.5rem;
@@ -185,16 +195,20 @@ table {
 }
 
 #insertSearch {
-    display: inline-block;
-    width: 65%;
-}
-
-#insertSearch p {
-    text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 #insertSearch ul {
+    position: relative;
+    bottom: 1rem;
+    margin-left: 3rem;
     list-style-type:square;
+    align-self: flex-start;
+}
+#insertSearch li {
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 900px) {
