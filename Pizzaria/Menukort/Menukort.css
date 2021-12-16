@@ -40,6 +40,10 @@ table {
     border-right: transparent;
   }
 
+  #test4 {
+    column-width: 10px;
+  }
+
   #tilbage_til_forsiden {
     background-color: rgb(51, 51, 51);
     color: white;
