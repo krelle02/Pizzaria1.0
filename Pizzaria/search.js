@@ -3,7 +3,7 @@ const pizzas = [{name:"pepperoni", ingredients: ["Pepperoni", "Ost", "Tomatsovs"
 {name:"kebab",ingredients: ["Kebab", "Rødløg", "Ost", "Tomatsovs"], image: "Billeder/Kebab.png" }, 
 {name:"hawaii", ingredients: ["Skinke", "Ananas", "Ost", "Tomatsovs"], image: "Billeder/Hawaii.png"}, 
 {name:"margherita", ingredients: ["Ost", "Tomatsovs"], image: "Billeder/Magarita.png"},
-{name:"spaghetti bolognese", ingredients: ["Spaghetti", "Kødsovs"], image: "t"},
+{name:"spaghetti bolognese", ingredients: ["Spaghetti", "Kødsovs"], image: "Billeder/Bolognese.png"},
 {name:"spaghetti carbonara", ingredients: ["Spaghetti", "Champignon", "Æg", "Skinke", "Bacon", "Parmesan"], image: "t"},
 {name:"lasagne", ingredients: ["Hjemmelavet"], image: "t"}];
 
