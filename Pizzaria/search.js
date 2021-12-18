@@ -56,10 +56,6 @@ setInterval(hamMenu,100);
 function hamMenu() {
 const menu = getComputedStyle(document.body).getPropertyValue('--menu').replace(/\W/g, '');
 
-if (menu == "OFF") {
-document.getElementsByClassName('nav-menu')[0].style.display = "none";
-}
-
 if (menu == "ON" && !activeMenu) {
     activeMenu = true;
     const HAM = document.getElementById('menu');
