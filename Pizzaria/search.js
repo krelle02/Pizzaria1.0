@@ -49,13 +49,13 @@ searchBar.addEventListener('keyup', (e) => {
    }
 })
 
-
 let activeMenu = false;
-setInterval(hamMenu,2000);
+
+setInterval(hamMenu,100);
+
 function hamMenu() {
 const body= document.body;
 const menu = getComputedStyle(body).getPropertyValue('--menu').replace(/\W/g, '');
-console.log(menu);
 if (menu == "ON" && !activeMenu) {
     activeMenu = true;
     const HAM = document.getElementById('menu');
@@ -63,10 +63,22 @@ if (menu == "ON" && !activeMenu) {
         const div = document.createElement('div');
         div.className = "ham-bar";
         HAM.append(div);
-        console.log('it worked');
     }
 }
 else if (menu == "OFF") {
     HAM.textContent = '';
 }
 }
+let open = false;
+function openMenu() { 
+    if (!open) {
+    document.getElementsByClassName('nav-menu')[0].style.display = "flex";
+    open = true;
+    }
+    else if (open) {
+        document.getElementsByClassName('nav-menu')[0].style.display = "none";
+        open = false;
+    }
+    
+}
+    
