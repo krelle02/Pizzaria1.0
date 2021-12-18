@@ -48,3 +48,25 @@ searchBar.addEventListener('keyup', (e) => {
        searchbar.value = '';
    }
 })
+
+
+let activeMenu = false;
+setInterval(hamMenu,2000);
+function hamMenu() {
+const body= document.body;
+const menu = getComputedStyle(body).getPropertyValue('--menu').replace(/\W/g, '');
+console.log(menu);
+if (menu == "ON" && !activeMenu) {
+    activeMenu = true;
+    const HAM = document.getElementById('menu');
+    for (let i = 0; i < 3; i++) {
+        const div = document.createElement('div');
+        div.className = "ham-bar";
+        HAM.append(div);
+        console.log('it worked');
+    }
+}
+else if (menu == "OFF") {
+    HAM.textContent = '';
+}
+}

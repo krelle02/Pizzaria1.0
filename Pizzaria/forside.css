@@ -3,6 +3,7 @@
 }
 
 body {
+    --menu: "OFF";
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
@@ -220,5 +221,54 @@ div {
     }
     .pizza-box {
         opacity: 0;
+    }
+}
+@media screen and (max-width: 1320px) {
+    #logo  {
+        display: none;
+        
+    }
+    #title {
+        margin-left: 2rem;
+    }
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+}
+
+.ham-bar {
+    border-radius: 2px;
+    width: 1.5rem;
+    height: 0.3rem;
+    background-color: red;
+    display: block;
+}
+
+#menu:hover > .ham-bar {
+    background-color: white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1080px) {
+    #nav-links {
+        display: none;
+    }
+    body {
+        --menu: "ON";
+    }
+}
+@media screen and (min-width: 1080px) {
+    body {
+        --menu: "OFF";
+    }
+    #menu {
+        display: none;
     }
 }
