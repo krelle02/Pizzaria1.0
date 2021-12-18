@@ -76,13 +76,15 @@ else if (menu == "OFF") {
 
 let open = false;
 function openMenu() { 
-    console.log(document.getElementsByClassName('nav-menu')[0].style.display);
+    
     if (!open) {
-    document.getElementsByClassName('nav-menu')[0].style.display = "flex";
+    document.getElementsByClassName('nav-menu')[0].style.opacity = "1";
+    
     open = true;
     }
     else if (open) {
-        document.getElementsByClassName('nav-menu')[0].style.display = "none";
+        document.getElementsByClassName('nav-menu')[0].style.opacity = "0";
+        
         open = false;
     }
     
