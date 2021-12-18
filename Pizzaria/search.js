@@ -54,8 +54,12 @@ let activeMenu = false;
 setInterval(hamMenu,100);
 
 function hamMenu() {
-const body= document.body;
-const menu = getComputedStyle(body).getPropertyValue('--menu').replace(/\W/g, '');
+const menu = getComputedStyle(document.body).getPropertyValue('--menu').replace(/\W/g, '');
+
+if (menu == "OFF") {
+document.getElementsByClassName('nav-menu')[0].style.display = "none";
+}
+
 if (menu == "ON" && !activeMenu) {
     activeMenu = true;
     const HAM = document.getElementById('menu');
@@ -69,8 +73,10 @@ else if (menu == "OFF") {
     HAM.textContent = '';
 }
 }
+
 let open = false;
 function openMenu() { 
+    console.log(document.getElementsByClassName('nav-menu')[0].style.display);
     if (!open) {
     document.getElementsByClassName('nav-menu')[0].style.display = "flex";
     open = true;

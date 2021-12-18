@@ -273,22 +273,6 @@ div {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 1080px) {
-    #nav-links {
-        display: none;
-    }
-    body {
-        --menu: "ON";
-    }
-}
-@media screen and (min-width: 1080px) {
-    body {
-        --menu: "OFF";
-    }
-    #menu {
-        display: none;
-    }
-}
 .nav-menu {
     z-index: 1;
     position: absolute;
@@ -326,4 +310,21 @@ div {
 .menu-sec:hover > a { 
     color: white; 
     transition: 0.4s;
+}
+
+@media screen and (max-width: 1080px) {
+    #nav-links {
+        display: none;
+    }
+    body {
+        --menu: "ON";
+    }
+}
+@media screen and (min-width: 1080px) {
+    body {
+        --menu: "OFF";  
+    }
+    #menu {
+        display: none;
+    }
 }
