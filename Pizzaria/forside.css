@@ -325,4 +325,7 @@ div {
     #menu {
         display: none;
     }
+    .nav-menu {
+        display: none;
+    }
 }
