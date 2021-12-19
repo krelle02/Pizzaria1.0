@@ -255,20 +255,18 @@ div {
     justify-content: center ;
     gap: 0.2rem;
     width: 3rem;
-    height: 2rem;
-    
-    
+    height: 2rem;  
 }
 
 .ham-bar {
     border-radius: 2px;
     width: 1.5rem;
     height: 0.3rem;
-    background-color: red;
+    background-color: white;
 }
 
 #menu:hover > div {
-    background-color: white;
+    background-color: red;
     transition: 0.3s;
 }
 
@@ -293,7 +291,7 @@ div {
     color: var(--main-color);
 }
 
-.menu-sec{  
+.menu-sec {  
     justify-content: center;
     align-items: center;
     width: 100%;
