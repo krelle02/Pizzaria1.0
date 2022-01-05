@@ -43,26 +43,14 @@ table {
     column-width: 10px;
   }
 
-  #tilbage_til_forsiden {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    display: flex;
-    width: 9%;
-    padding: 8px;
-    margin: 30px 0px 0px 30px;
-    border-radius: 1rem;
-    opacity: 0.95;
-  }
-
-#tilbage_til_forsiden:hover {
-    color: lightblue;
-}
-
 h2 {
   margin-left: 900px;
   color: white;
 }
 
-  
+#tilbage_til_forsiden {
+  display: flex;
+  position: absolute;
+  height: 25%;
+  width: auto;
+}
